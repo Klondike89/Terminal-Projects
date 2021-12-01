@@ -1,92 +1,25 @@
-History
-
-What city was the first capital of the United States?
-New York City
-
-Who first discovered America?
-Leif Erikson
-
-When was the Declaration of Independence signed?
-August 2nd, 1776
-
-When did the American Civil War end?
-May 9, 1865
-
-Who was the shortest-serving United States president?
-William Henry Harrison
-
-
-
-Science
-
-What does the Earth orbit around?
-The Sun
-
-What orbits around the Earth?
-The Moon
-
-What kind of animal are humans?
-Mammals
-
-What does CRT stand for?
-Cathode Ray Tube
-
-What was Einstein's most famous theory?
-General Relativity
-
-
-Art
-
-Which famous painter was also a sculptor, an architect, and an engineer?
-Leonardo Da Vinci
-
-Who painted the “Mona Lisa”?
-Leonardo Da Vinci
-
-Which abstract expressionist was known for using the “drip technique”?
-Jackson Pollock
-
-Which French art movement of the late 19th century is characterized by evoking emotion rather than realism?
-Post Impressionism
-
-Which artist is famous for Pop Art?
-Andy Warhol
-
-
-Math
-
-What is the next prime number after 7?
-11
-
-True or false? A convex shape curves outwards.
-True
-
-How many sides does a nonagon have?
-9
-
-True or false? Opposite angles of a parallelogram are equal.
-True
-
-What does the square root of 144 equal?
-12
-
-
-
-90s Trivia
-
-"Barbie Girl" was the name of a controversial song by what artist?
-Aqua
-
-The main actor who played in The Fresh Prince of Bel-Air was named what?
-Will Smith
-
-Nirvana created a musical genre based on the influence of their music. The genre was called what?
-Grunge
-
-Woody from Toy Story was performed by which actor?
-Tom Hanks
-
-Cartoon characters played basketball with Michael Jordan in what animated movie?
-Space Jam
-
-
+History|What was the first capital of the United States of America?|New York City
+History|Who first discovered America?|Leif Erikson
+History|When was the Declaration of Independence signed?|August 2nd, 1776
+History|When did the American Civil War end?|May 9, 1865
+History|Who was the shortest-serving United States president?|William Henry Harrison
+Science|What does the Earth orbit around?|The Sun
+Science|What orbits around the Earth?|The Moon
+Science|What kind of animal are humans?|Mammals
+Science|What does CRT stand for?|Cathode Ray Tube
+Science|What was Einstein's most famous theory?|General Relativity
+Art|Which famous painter was also a sculptor, an architect, and an engineer?|Leonardo Da Vinci
+Art|Who painted the "Mona Lisa"?|Leonardo Da Vinci
+Art|Which abstract expressionist was known for using the "drip technique"?|Jackson Pollock
+Art|Which French art movement of the late 19th century is characterized by evoking emotion rather than realism?|Post Impressionism
+Art|Which artist is famous for Pop Art?|Andy Warhol
+Math|What is the next prime number after 7?|11
+Math|True or false? A convex shape curves outwards.|True
+Math|How many sides does a nonagon have?|9
+Math|True or false? Opposite angles of a parallelogram are equal.|True
+Math|What does the square root of 144 equal?|12
+Trivia|"Barbie Girl" was the name of a controversial song by what artist?|Aqua
+Trivia|The main actor who played in The Fresh Prince of Bel-Air was named what?|Will Smith
+Trivia|Nirvana created a musical genre based on the influence of their music. The genre was called what?|Grunge
+Trivia|Woody from Toy Story was performed by which actor?|Tom Hanks
+Trivia|Cartoon characters played basketball with Michael Jordan in what animated movie?|Space Jam
