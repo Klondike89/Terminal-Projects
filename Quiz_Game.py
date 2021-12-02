@@ -8,6 +8,7 @@ no = "N\u0332o/n\u0332o"
 
 
 player = {'score':0,'losses':0}
+asked_questions = {}
 
 art = "[A\u0332rt]  "
 history = "[H\u0332istory]  "
@@ -53,40 +54,58 @@ if want_to_play.lower() != 'y':
 
 # Choose a catagory
 def choose_catagory():
-    print("Please choose a catagory from the list below.\n"+
-        "To make a selection enter the Corisponding letter.\n")
-    type_choice = input(art+history+math+science+trivia+":")
-    if type_choice.lower() == 'a':
-        choice = 0
-    elif type_choice.lower() == 'h':
-        choice = 1
-    elif type_choice.lower() == 'm':
-        choice = 2
-    elif type_choice.lower() == 's':
-        choice = 3
-    elif type_choice.lower() == 't':
-        choice = 4
-# Encountering some bug here.
-    else:
-        print("Invalid character entered, "+ 
-        "please choose one of the options given.")
-        choose_catagory()
-    return int(choice)
+    valid_choices = ['a','h','m','s','t']
+    valid_input = False
+    while not valid_input:
+        print("\nPlease choose a catagory from the list below.\n"+
+            "To make a selection enter the Corisponding letter.\n")
+        type_choice = input(art+history+math+science+trivia+":")
+        if type_choice in valid_choices:
+            if type_choice.lower() == 'a':
+                choice = 0
+            elif type_choice.lower() == 'h':
+                choice = 1
+            elif type_choice.lower() == 'm':
+                choice = 2
+            elif type_choice.lower() == 's':
+                choice = 3
+            elif type_choice.lower() == 't':
+                choice = 4
+            valid_input = True    
+            return int(choice)
+    # Encountering some bug here.
+        else:
+            print("Invalid character entered, "+ 
+            "please choose one of the options given.")
 
 def ask_question(choice):
     draw = randint(0,4)
     question_pair = all_catagories[choice][draw]
-    player_answer = str(input(question_pair[0])).lower()
+    player_answer = str(input('\n'+question_pair[0])).lower()
     if player_answer == str(question_pair[1]).lower():
-        print("Correct!")
+        print("\nCorrect!")
         player["score"] +=1
         print("Score: "+str(player["score"])+" Losses: "+str(player["losses"]))
     else:
-        print("Sorry the correct answer is: " + question_pair[1])
+        print("\nSorry the correct answer is: " + question_pair[1])
         player["losses"] +=1
+        print("Score: "+str(player["score"])+" Losses: "+str(player["losses"]))
+
+def check_score():
+    if player["score"]==10:
+        print('\nCONGRATULATIONS!!!\n'+
+        'You ACED this quiz!\n'+
+        'You are one smart cookie!')
+    
+    if player["losses"]==3:
+        print('\nMy condolences, you have lost the game.')
+
 
 while player["score"]<10 and player["losses"]<3:
     ask_question(choose_catagory())
+    check_score()
+
+
 '''Program Goals:
 -5 Catagories of questions
 -5 Questions in each Catagory
