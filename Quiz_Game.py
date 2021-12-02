@@ -55,28 +55,38 @@ if want_to_play.lower() != 'y':
 def choose_catagory():
     print("Please choose a catagory from the list below.\n"+
         "To make a selection enter the Corisponding letter.\n")
-    choice = input(art+history+math+science+trivia+":")
-    if choice.lower() == 'a':
+    type_choice = input(art+history+math+science+trivia+":")
+    if type_choice.lower() == 'a':
         choice = 0
-    elif choice.lower() == 'h':
+    elif type_choice.lower() == 'h':
         choice = 1
-    elif choice.lower() == 'm':
+    elif type_choice.lower() == 'm':
         choice = 2
-    elif choice.lower() == 's':
+    elif type_choice.lower() == 's':
         choice = 3
-    elif choice.lower() == 't':
+    elif type_choice.lower() == 't':
         choice = 4
+# Encountering some bug here.
     else:
-        print("Invalid character entered, please choose one of the options given.")
-    return choice
+        print("Invalid character entered, "+ 
+        "please choose one of the options given.")
+        choose_catagory()
+    return int(choice)
 
 def ask_question(choice):
-    x = choice
-    print(choice)
-    #print(all_catagories[x])
+    draw = randint(0,4)
+    question_pair = all_catagories[choice][draw]
+    player_answer = str(input(question_pair[0])).lower()
+    if player_answer == str(question_pair[1]).lower():
+        print("Correct!")
+        player["score"] +=1
+        print("Score: "+str(player["score"])+" Losses: "+str(player["losses"]))
+    else:
+        print("Sorry the correct answer is: " + question_pair[1])
+        player["losses"] +=1
 
-
-ask_question(choose_catagory())
+while player["score"]<10 and player["losses"]<3:
+    ask_question(choose_catagory())
 '''Program Goals:
 -5 Catagories of questions
 -5 Questions in each Catagory
