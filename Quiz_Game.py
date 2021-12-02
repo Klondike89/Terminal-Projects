@@ -20,6 +20,12 @@ history_questions = []
 math_questions = []
 science_questions = []
 nineties_trivia_questions = []
+all_catagories = [art_questions,
+                history_questions,
+                math_questions,
+                science_questions,
+                nineties_trivia_questions
+                ]
 
 with open(FILE_PATH, 'r') as file:
     for line in file:
@@ -49,10 +55,28 @@ if want_to_play.lower() != 'y':
 def choose_catagory():
     print("Please choose a catagory from the list below.\n"+
         "To make a selection enter the Corisponding letter.\n")
-    catagory = input(art+history+math+science+trivia+":")
-    return catagory
+    choice = input(art+history+math+science+trivia+":")
+    if choice.lower() == 'a':
+        choice = 0
+    elif choice.lower() == 'h':
+        choice = 1
+    elif choice.lower() == 'm':
+        choice = 2
+    elif choice.lower() == 's':
+        choice = 3
+    elif choice.lower() == 't':
+        choice = 4
+    else:
+        print("Invalid character entered, please choose one of the options given.")
+    return choice
 
-choose_catagory()
+def ask_question(choice):
+    x = choice
+    print(choice)
+    #print(all_catagories[x])
+
+
+ask_question(choose_catagory())
 '''Program Goals:
 -5 Catagories of questions
 -5 Questions in each Catagory
