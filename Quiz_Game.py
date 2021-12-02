@@ -99,11 +99,13 @@ def ask_question(question_pair):
         if player_answer == str(question_pair[1]).lower():
             print("\nCorrect!")
             player["score"] +=1
-            print("Score: "+str(player["score"])+" Losses: "+str(player["losses"]))
+            print("Score: "+str(player["score"])+
+                " Losses: "+str(player["losses"]))
         else:
             print("\nSorry the correct answer is: " + question_pair[1])
             player["losses"] +=1
-            print("Score: "+str(player["score"])+" Losses: "+str(player["losses"]))
+            print("Score: "+str(player["score"])+
+                " Losses: "+str(player["losses"]))
 
 def check_score():
     if player["score"]==10:
